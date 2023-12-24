@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div id="search-container">
+            <label for="location">Search</label>
+            <input type="text" id="location" placeholder="Enter City">
+            <button onclick="getWeather()">Get Weather</button>
+        </div>
+        <div id="weather-info">
+            <div id="weather-icon"></div>
+            <h2 id="city-name"></h2>
+            <p id="description"></p>
+            <p id="temperature"></p>
+            <p id="wind-speed"></p>
+            <p id="cloud-cover"></p>
+            <p id="pressure"></p>
+            <p id="date-time"></p>
+        </div>
+        <div id="toggle-container">
+            <button onclick="toggleTemperature()">Toggle Temperature</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
